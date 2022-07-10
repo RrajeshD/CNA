@@ -1,7 +1,7 @@
 #!groovy
 
 def err
-def status = 'suucess'
+def status = 'sucess'
 
 pipeline {
    agent any
