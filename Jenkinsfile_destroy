@@ -1,0 +1,22 @@
+#!groovy
+
+def err
+def status = 'sucess'
+
+pipeline {
+   agent any
+   stages {
+      stage('Removing the InfraSetUp For EKS') {
+          steps {
+              script {
+              // Removing the Infrastracture
+	       sh '''
+	        terraform destroy --auto-approve
+		'''
+              }
+          }
+      }
+
+     }
+
+   }
