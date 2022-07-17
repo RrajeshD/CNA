@@ -25,6 +25,9 @@ pipeline {
             sh'''
             mv mainfile.txt main.tf
             mv variablefile.txt variables.tf
+            sed -i 's/why/$access_key/g' main.tf
+            sed -i 's/not/$secret_key/g' main.tf
+            cat main.tf -n
             '''
             }
         }
