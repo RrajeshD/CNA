@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "AKIA2AWBUE32VO5R4Q4P"
-    secret_key = "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"
+    access_key = why
+    secret_key = not
     region = "us-east-2"
 }
 resource "aws_iam_role" "eks-iam-role" {
