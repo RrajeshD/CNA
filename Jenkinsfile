@@ -12,7 +12,7 @@ pipeline {
               // Get some code from a GitHub repository
               git branch: 'main',
 
-              credentialsId: 'Terraform-Integration',
+              credentialsId: 'Github-Intigration',
 
               url: "https://github.com/RrajeshD/CNA-Infra.git" 'HEAD-main'
 
