@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = why
-    secret_key = not
+    access_key = "why"
+    secret_key = "not"
     region = "us-east-2"
 }
 resource "aws_iam_role" "eks-iam-role" {
